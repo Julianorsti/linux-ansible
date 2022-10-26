@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www/html":{"guestpath":"/var/www/html","hostpath":"/home/jrstec/Área de Trabalho/Desafio/linux-ansible/site","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/jrstec/Área de Trabalho/Desafio/linux-ansible","disabled":false,"__vagrantfile":true}}}

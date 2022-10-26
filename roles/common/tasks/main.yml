@@ -1,0 +1,9 @@
+---
+# Tarefas a serem executadas na Common
+
+- name: Instalar programas
+  include: install.yml
+
+- name: Adicionar usuario
+  include: configure.yml
+  

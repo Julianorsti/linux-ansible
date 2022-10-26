@@ -1,0 +1,27 @@
+---
+    - name: Definir nome da maquina
+      ansible.builtin.hostname:
+        name: devops22
+
+    - name: Criando usuario
+      ansible.builtin.user:
+        name: juliano
+        password: "{{ 'password' | password_hash('sha512', 'mysecretsalt') }}"
+        groups:
+          - adm
+        state: "present"
+        shell: "/bin/bash"
+        system: false
+        create_home: true
+        home: "/home/juliano"
+        comment: "Ansible juliano"
+        generate_ssh_key: true
+
+ 
+ 
+ 
+ ## - name: criar um usuario
+  ##  ansible.builtin.user:
+    ##  name: "juliano"
+     ## uid: 1040
+      

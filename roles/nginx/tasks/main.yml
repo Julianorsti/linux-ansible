@@ -1,0 +1,17 @@
+---
+# tasks file for nginx
+- name: Atualizar SO
+  ansible.builtin.apt:
+    update_cache: yes
+
+- name: Instalar Nginx
+  ansible.builtin.apt:
+    pkg:
+    - nginx
+    
+- name: Copiar Html
+  copy:
+    src: index.html
+    dest: /var/www/html
+
+
